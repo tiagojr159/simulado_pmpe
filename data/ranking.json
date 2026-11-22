@@ -1,6 +1,6 @@
 [
     {
-        "name": "dfasdf",
+        "name": "edu",
         "state": "Pernambuco",
         "city": "Barra de Guabiraba",
         "score": 20,
@@ -9,81 +9,6 @@
         "voided": 0,
         "status": "Reprovado",
         "date": "2026-11-22T22:49:26.730047Z"
-    },
-    {
-        "name": "dfasdf",
-        "state": "Pernambuco",
-        "city": "Barra de Guabiraba",
-        "score": 0,
-        "correct": 0,
-        "total": 10,
-        "voided": 0,
-        "status": "Reprovado",
-        "date": "2026-11-22T22:48:55.212278Z"
-    },
-    {
-        "name": "dfasdf",
-        "state": "Pernambuco",
-        "city": "Barra de Guabiraba",
-        "score": 27,
-        "correct": 8,
-        "total": 30,
-        "voided": 0,
-        "status": "Reprovado",
-        "date": "2026-11-22T22:47:56.220965Z"
-    },
-    {
-        "name": "dfasdf",
-        "state": "Pernambuco",
-        "city": "Barra de Guabiraba",
-        "score": 10,
-        "correct": 1,
-        "total": 10,
-        "voided": 0,
-        "status": "Reprovado",
-        "date": "2026-11-22T22:43:14.920720Z"
-    },
-    {
-        "name": "fdg",
-        "state": "Pernambuco",
-        "city": "Belo Jardim",
-        "score": 22,
-        "correct": 13,
-        "total": 60,
-        "voided": 0,
-        "status": "Reprovado",
-        "date": "2026-11-22T22:41:50.543654Z"
-    },
-    {
-        "name": "fdg",
-        "state": "Pernambuco",
-        "city": "Belo Jardim",
-        "score": 20,
-        "correct": 2,
-        "total": 10,
-        "voided": 0,
-        "status": "Reprovado",
-        "date": "2026-11-22T22:38:39.276393Z"
-    },
-    {
-        "name": "TIAGO SEVERINO ANTONIO JUNIOR",
-        "state": "Pernambuco",
-        "city": "Igarassu",
-        "score": 30,
-        "correct": 3,
-        "total": 10,
-        "voided": 1,
-        "status": "Reprovado",
-        "date": "2026-11-22T20:13:17.134872Z"
-    },
-    {
-        "name": "TIAGO SEVERINO ANTONIO JUNIOR",
-        "state": "Rio de Janeiro",
-        "city": "Cardoso Moreira",
-        "score": 23,
-        "correct": 7,
-        "total": 30,
-        "status": "Reprovado",
-        "date": "2026-11-22T19:14:30.302803Z"
     }
+   
 ]
