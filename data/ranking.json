@@ -1,0 +1,23 @@
+[
+    {
+        "name": "TIAGO SEVERINO ANTONIO JUNIOR",
+        "state": "Pernambuco",
+        "city": "Igarassu",
+        "score": 30,
+        "correct": 3,
+        "total": 10,
+        "voided": 1,
+        "status": "Reprovado",
+        "date": "2026-11-22T20:13:17.134872Z"
+    },
+    {
+        "name": "TIAGO SEVERINO ANTONIO JUNIOR",
+        "state": "Rio de Janeiro",
+        "city": "Cardoso Moreira",
+        "score": 23,
+        "correct": 7,
+        "total": 30,
+        "status": "Reprovado",
+        "date": "2026-11-22T19:14:30.302803Z"
+    }
+]
