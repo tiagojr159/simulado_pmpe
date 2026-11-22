@@ -96,6 +96,8 @@ async function beginExam(event) {
   } catch (error) { toast(error.message); }
 }
 
+function formatStatementLines(value) { return String(value || '').replace(/\s+(I{1,3}|IV)\.\s+/g, '\n$1. '); }
+
 function renderQuestion() {
   const question = questions[currentIndex];
   const percent = Math.round(((currentIndex + 1) / activeLength) * 100);
@@ -103,7 +105,7 @@ function renderQuestion() {
   $('#progressPercent').textContent = `${percent}%`;
   $('#progressBar').style.width = `${percent}%`;
   $('#subjectBadge').textContent = question.subject.toLocaleUpperCase('pt-BR');
-  $('#examTitle').textContent = question.question;
+  $('#examTitle').textContent = formatStatementLines(question.question);
   const base = $('#baseText');
   const passage = question.passageId ? activePassages[question.passageId] : null;
   if (passage) {
@@ -124,7 +126,7 @@ function renderQuestion() {
   const optionMarkup = LETTERS.map(letter => {
     const selected = answers[question.id] === letter;
     const disabled = question.voided ? 'disabled aria-disabled="true"' : '';
-    return '<button type="button" class="answer-option ' + (selected ? 'selected' : '') + '" data-answer="' + letter + '" aria-pressed="' + selected + '" ' + disabled + '><span class="answer-letter">' + letter + '</span><span>' + escapeHTML(question.options[letter]) + '</span><span class="answer-check">✓</span></button>';
+    return '<button type="button" class="answer-option ' + (selected ? 'selected' : '') + '" data-answer="' + letter + '" aria-pressed="' + selected + '" ' + disabled + '><span class="answer-letter">' + letter + '</span><span class="answer-text">' + escapeHTML(formatStatementLines(question.options[letter])) + '</span><span class="answer-check">✓</span></button>';
   }).join('');
   const voidNotice = question.voided ? '<div class="voided-question" role="note">Esta questão foi anulada no gabarito definitivo. O ponto será atribuído automaticamente.</div>' : '';
   $('#answerList').innerHTML = voidNotice + optionMarkup;
